@@ -3,6 +3,7 @@ var slideIndex = 1;
 //initial showing
 showDivs(slideIndex, "mySlides");
 showDivs(slideIndex, "mySlides2");
+showDivs(slideIndex, "mySlides3");
 
 function plusDivs(n, name) {
   showDivs(slideIndex += n, name);
