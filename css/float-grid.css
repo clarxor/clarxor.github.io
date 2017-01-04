@@ -20,6 +20,8 @@
 
 .headerTransBox{
   background-color:#305772;
+   opacity: 0.6;
+  filter: alpha(opacity=60);
 }
 
 .headerText{
@@ -45,10 +47,16 @@ text-shadow: 0 1px 1px black;
 .aboutMe{
   color: white;
   font-family: 'Arimo', sans-serif;
-  font-size: 60%;
+  font-size: 100%;
 
   padding-bottom: 30px;
 
+}
+
+.generalText{
+font-family: 'Dosis', sans-serif;
+  font-size: 150%;
+  text-align: center;
 }
 
 .ekcoContainer {
