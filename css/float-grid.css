@@ -12,7 +12,7 @@
  *
  *   For smaller screens, we always want 20px of padding on either side,
  *   so 960 + 20 + 20 => 1000px
- *
+ *     background: url(https://images.unsplash.com/photo-1437941792454-bacef7a7f736?q80&fmjpg&s9d54a5c69d3ae8ba1af0554649c24aa8) center;
  **/
 .headerContainer{
   padding-bottom:20px;
@@ -32,15 +32,16 @@
  font-size: 3rem;
 text-shadow: 0 1px 1px black;
 
-  
+
 }
+
 
 .headContainer {
  background-color: #363541;
   max-width: 1000px;
   border-style: solid;
   border-width: 5px;
- 
+
 }
 
 
@@ -64,7 +65,7 @@ font-family: 'Dosis', sans-serif;
   max-width: 1000px;
   border-style: solid;
   border-width: 5px;
- 
+
 }
 
 .row {
@@ -114,7 +115,7 @@ font-family: 'Dosis', sans-serif;
 
   /* 4 columns 4 out of 12 columns*/
   .col-4 {
-  
+
     width: 33%;
   }
 
