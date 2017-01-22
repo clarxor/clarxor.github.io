@@ -2,153 +2,185 @@
 <html lang="en">
 
 <head>
-  <style> *{padding: 0; margin: 0} </style>
-  <meta charset="UTF-8">
-  <title>Clark Wu</title>
+    <meta charset="UTF-8">
+    <title>Clark Wu</title>
+    <link rel="stylesheet" href="bower_components/normalize.css/normalize.css" />
 
-  <!-- Responsive viewport tag, tells small screens that it's responsive -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/float-grid.css" />
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/w3.css" />
-<link href="https://fonts.googleapis.com/css?family=Arimo|Hind" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Dosis|Reem+Kufi" rel="stylesheet">
-  <style>
-.mySlides {display:none}
-.w3-left, .w3-right, .w3-badge {cursor:pointer}
-.w3-badge {height:13px;width:13px;padding:0}
-</style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Reem+Kufi" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
+    <header class="container-fluid">
+        <div class="jumbotron backgroundGrad">
+            <h1 class="text-uppercase text-center">Clark Wu</h1>
 
-  <main>
+            <h2 class="text-center" style="padding-top: 50px"> Programmer and Project Manager doing</h2>
+            <h2 class="text-center"> Web || Mobile || Game development </h2>
+        </div>
+    </header>
 
-<!--
-        <div class = " headerContainer">
-          <div class = "headerTransBox">
-      <div class = "headerText"> CLARK WU
+    <section class="container">
+        <article class="col-xs-12 col-md-12 col-lg-12 col-lg-offset-1">
+            <h2 class="text-center">Ekco</h2>
+            <p class="generalText"> A social media app that lets you connect with any nearby users. </p>
+        </article>
+    </section>
 
-                               <p class = "aboutMe"> Computer Engineering, UCSD <br>
-              <br>
-                 I enjoy creating fun and meaningful experiences <br>
-                 <br>
-                 Here are some projects I've worked on</p>
-      </div>
-      </div>
-      </div> 
-      -->
-<div class = "row">
-  
-       <div class = "headerText"> CLARK WU
-         </div>
-     
-  </div>
+    <section class="container">
 
-  <div class="row">
-      <div class="col-12, ekcoContainer">
-      
-     <p class="row, generalText">
-            <b> Ekco </b> <br>
-            This mobile application allows nearby users to instantaneously <br>
-            connect on any social media platform <br>
-            <pre style = "text-align:center;"><a href="https://www.youtube.com/watch?v=QBWN0AWxyNI">Trailer</a>   <a href="https://itunes.apple.com/us/app/ekco/id1116907072?mt=8">App Store</a>   <a href="https://play.google.com/store/apps/details?id=io.altum.ekco&hl=en">Google Play</a> 
-            </pre>
-            </p>
-
-
- <div class="row">
-<div class="w3-content w3-display-container" style="max-width:400px">
-  <img class="mySlides" src="./images/ekco1.png" style="width:100%">
-  <img class="mySlides" src="./images/ekco2.png" style="width:100%">
-  <img class="mySlides" src="./images/ekco3.png" style="width:100%">
-  <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-    <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1, 'mySlides')">&#10094;</div>
-    <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1, 'mySlides')">&#10095;</div>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1, 'mySlides')"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2, 'mySlides')"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3, 'mySlides')"></span>
-  </div>
-</div>
-</div>
-
-      </div>
-    </div>
-
-<!-- Second -->
-  <div class="row">
-      <div class="col-12, ekcoContainer">
-
-        <p class = "row, generalText">
-          <b> Artillects </b> <br>
-          Artillects is a multiplayer and cross platform turn based <br>
-          artillery game. It features multiple weapons and random <br>
-          seed-generated destructible terrain. <br>
-          <i> WIP </i>
-          </p>
-
-
- <div class="row">
-<div class="w3-content w3-display-container" style="max-width:800px">
-  <img class="mySlides2" src="./images/artillects1.jpg" style="width:100%">
-  <img class="mySlides2" src="./images/artillects2.jpg" style="width:100%">
-  <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-    <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1, 'mySlides2')">&#10094;</div>
-    <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1, 'mySlides2')">&#10095;</div>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1, 'mySlides2')"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2, 'mySlides2')"></span>
-  </div>
-</div>
-</div>
-
-      </div>
-    </div>
-
-<!-- Third -->
-
-  <div class="row">
-      <div class="col-12, ekcoContainer">
-
-        <p class = "row, generalText">
-          <b> Paper Raid </b> <br>
-          The first game I ever finished. <br>
-          Created in 30 days for the Indie Game Maker's Contest 2015, <br>
-          the Paper Raid is a multi stage beat em up.<br>
-          <pre style = "text-align:center;"><a href="https://www.youtube.com/watch?v=EQzB1jbD5Ec&feature=youtu.be">Trailer</a>   <a href="http://gamejolt.com/games/paper-raid/85709#screenshot-165641">Download</a>
+        <div class="card-group">
+            <div class="card">
+                <img class="card-img-top" src="./images/ekco1.png" alt="Card image cap" align="middle">
+                <div class="card-block">
+                    <h4 class="card-title">Tech</h4>
+                    <p class="card-text">The app was developed using Node.js, React Native, and Typescript</p>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./images/ekco2.png" alt="Card image cap" align="middle">
+                <div class="card-block">
+                    <h4 class="card-title">Features</h4>
+                    <p class="card-text">Promixmity based connections, a list of your contacts + connected accounts, and five supported social media platforms.</p>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./images/ekco3.png" alt="Card image cap" align="middle">
+                <div class="card-block">
+                    <h4 class="card-title">Get</h4>
+                    <p class="card-text">Ekco is available on Android and iOS</p>
+                    <pre><a href="https://www.youtube.com/watch?v=QBWN0AWxyNI">Trailer</a>   <a href="https://itunes.apple.com/us/app/ekco/id1116907072?mt=8">App Store</a>   <a href="https://play.google.com/store/apps/details?id=io.altum.ekco&hl=en">Google Play</a>
            </pre>
-           </p>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="container">
+        <article class="col-xs-12 col-md-12 col-lg-12 col-lg-offset-1">
+            <h2 class="text-center">RELAY</h2>
+            <p class="generalText"> Infinite action-arcade game </p>
+        </article>
+    </section>
 
- <div class="row">
-<div class="w3-content w3-display-container" style="max-width:800px">
-  <img class="mySlides3" src="./images/paperRaid1.png" style="width:100%">
-  <img class="mySlides3" src="./images/paperRaid2.png" style="width:100%">
-  <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-    <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1, 'mySlides3')">&#10094;</div>
-    <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1, 'mySlides3')">&#10095;</div>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1, 'mySlides3')"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2, 'mySlides3')"></span>
-  </div>
-</div>
-</div>
+    <section class="container">
 
-      </div>
-    </div>
+        <div class="card-group">
+            <div class="card">
+                <img class="card-img-top" src="./images/bambooRelay.gif" alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="card-title">Tech</h4>
+                    <p class="card-text">Written in javascript in the PIXI HTML5 rendering engine. Cocoon is used for porting to mobile.
+                    Neural Network uses AC3 algorithm written in python. The AI used for the game is open source! </p>
+                    <a href="https://github.com/calclavia/relay-generator">AI Source Code</a>
 
- <div class="row">
-  <div class="col-4">
-  <p class = "aboutMe" >
-    Computer Engineering, UCSD 18 <br>
-    clarkcwu@gmail.com <br>
-    <a href="CWuResumeF.pdf">Resume</a>
-  </p>
-</div>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+            </div>
 
+            <div class="card">
+                <img class="card-img-top" src="./images/artiRelay.gif" alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="card-title">Features</h4>
+                    <p class="card-text">Infinite levels intelligently-generated by a neural network. Adaptive difficulty and an easy to learn yet nuanced mechanic makes
+                    RELAY perfect for gamers of all backgrounds. </p>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+            </div>
 
-  </main>
-<script src = "./slide.js"> </script>
+            <div class="card">
+                <img class="card-img-top" src="./images/voltRelay.gif" alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="card-title">Get</h4>
+                    <p class="card-text">RELAY will be available for Android and iOS February.</p>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="container">
+        <article class="col-xs-12 col-md-12 col-lg-12 col-lg-offset-1">
+            <h2 class="text-center">Artillects</h2>
+            <p class="generalText"> Cross-platform turn based multiplayer strategy. </p>
+        </article>
+    </section>
+
+    <section class="container">
+
+        <div class="card-group">
+            <div class="card">
+                <img class="card-img-top" src="./images/artillects1.jpg" alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="card-title">Tech</h4>
+                    <p class="card-text"> Built in the Unity Engine with C#. <br> The PUN library was used for networking</p>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./images/artillects2.jpg" alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="card-title">Features</h4>
+                    <p class="card-text">Seed-generated maps, destructible terrain, cross-platform multiplayer, and multiple weapons and customizable loadouts. </p>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <article class="col-xs-12 col-md-12 col-lg-12 col-lg-offset-1">
+            <h2 class="text-center">Paper Raid</h2>
+            <p class="generalText"> IGMC 2015 Submission </p>
+        </article>
+    </section>
+
+    <section class="container">
+
+        <div class="card-group">
+            <div class="card">
+                <img class="card-img-top" src="./images/paperRaid1.png" alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="card-title">Tech</h4>
+                    <p class="card-text">Created with visual scripting in flash-based Stencyl engine.</p>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./images/paperRaid2.png" alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="card-title">Features</h4>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img-top" src="./images/paperRaid3.png" alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="card-title">Get</h4>
+                    <p class="card-text"> Paper Raid is available for Windows only. </p>
+                    <pre><a href="https://www.youtube.com/watch?v=EQzB1jbD5Ec&feature=youtu.be">Trailer</a>      <a href="http://gamejolt.com/games/paper-raid/85709#close">Download</a></pre>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid jumboEnder ">
+        <h3 class="text-center white-text"> Email - clarkcwu@gmail.com  </h3>
+        <h3 class="text-center white-text"> UCSD Computer Engineering '18  </h3>
+    </footer>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="js/custom.js"></script>
 </body>
 
 </html>

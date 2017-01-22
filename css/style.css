@@ -1,0 +1,56 @@
+
+.jumbotron{
+    min-width:100%;
+    height:400px;
+
+}
+
+.backgroundGrad{
+  background:
+   linear-gradient(
+     rgba(0, 0, 0, 0.5),
+     rgba(0, 0, 0, 0.5)
+   ),url('../wild.jpg');
+
+}
+
+.jumboEnder{
+  min-width:100%;
+  height:200px;
+  background-size: cover;
+  background:
+   linear-gradient(
+     rgba(0, 0, 0, 0.5),
+     rgba(0, 0, 0, 0.5)
+   ),url('../wild2.png');
+}
+
+
+.white-text {
+  padding-top: 50px;
+  color: white;
+text-shadow: 2px 2px 3px rgba(0,0,0,.5);
+}
+
+.card-group{
+  padding-bottom: 50px;
+}
+
+.generalText{
+font-family: 'Dosis', sans-serif;
+  font-size: 125%;
+  text-align: center;
+}
+.card-img-top{
+  width:100%;
+  height:auto;
+}
+header h1{
+
+    color:white;
+    text-shadow:2px 2px 3px rgba(0,0,0,.5)
+}
+form{padding:20px;background-color:wheat;}
+form input{width:200px;padding:10px;}
+footer{background-color: #E38181;}
+footer p{color:white;margin-bottom:0;padding-bottom:10px;}
