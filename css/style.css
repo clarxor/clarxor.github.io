@@ -11,6 +11,7 @@
      rgba(0, 0, 0, 0.5),
      rgba(0, 0, 0, 0.5)
    ),url('../wild.jpg');
+   background-size: 100%
    background-repeat: no-repeat;
 }
 
@@ -23,6 +24,7 @@
      rgba(0, 0, 0, 0.5),
      rgba(0, 0, 0, 0.5)
    ),url('../wild2.png');
+   background-size: 100%
    background-repeat: no-repeat;
 }
 
