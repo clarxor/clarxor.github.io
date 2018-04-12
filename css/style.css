@@ -1,12 +1,16 @@
+
+
 .giffy-card {
   border: 2px solid black;
   width: 100%;
   height: auto;
 }
 .giffy-card-long {
+ 
   border: 2px solid black;
-  width: 280px;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .giffy-card:hover {
   border: 2px solid white;
