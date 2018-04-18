@@ -1,8 +1,8 @@
 
 
 .giffy-card {
-  border: 2px solid black;
-  width: 100%;
+  
+  width:100%;
   height: auto;
 }
 .giffy-card-long {
@@ -13,10 +13,12 @@
   object-fit: cover;
 }
 .giffy-card:hover {
-  border: 2px solid white;
+  border-left: 2px solid #CFDEF3;
+  border-right: 2px solid #CFDEF3;
 }
 .giffy-card-long:hover {
-  border: 2px solid white;
+  border-left: 2px solid #E0EAFC;
+  border-right: 2px solid #E0EAFC;
 }
 
 .jumbotron{
