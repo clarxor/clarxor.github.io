@@ -13,6 +13,13 @@
   object-fit: cover;
 }
 
+.giffy-card-long-initial {
+  margin-left: 12.5%;
+  width: 75%;
+  height: auto;
+  object-fit: cover;
+}
+
 .giffy-card-long-display {
   width: 100%;
   height: auto;
@@ -20,8 +27,7 @@
 }
 
 .giffy-card:hover {
-  border-left: 2px solid #CFDEF3;
-  border-right: 2px solid #CFDEF3;
+
 }
 .giffy-card-long:hover {
 
@@ -84,7 +90,7 @@ text-shadow: 2px 2px 3px rgba(0,0,0,.5);
   visibility: hidden;
   color:white;
   font-family: 'Roboto', sans-serif;
-  max-height: 50px;
+  height: 50px;
   text-align: center;
   margin-bottom:60px;
 }
