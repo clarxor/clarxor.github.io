@@ -206,7 +206,7 @@
                   $(window).scroll(function() {
                     $('.giffy-card').each(function(){
                     var imagePos = $(this).offset().top;
-                
+                      this.play()
                     var topOfWindow = $(window).scrollTop();
                       if (imagePos < topOfWindow+800) {
                         $(this).addClass("fadeIn");
@@ -218,7 +218,7 @@
                   $(window).scroll(function() {
                     $('.giffy-card-long').each(function(){
                     var imagePos = $(this).offset().top;
-                
+                    this.play()
                     var topOfWindow = $(window).scrollTop();
                       if (imagePos < topOfWindow+800) {
                         $(this).addClass("fadeIn");
