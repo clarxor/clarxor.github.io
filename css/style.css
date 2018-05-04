@@ -15,6 +15,15 @@
     border-width: 2px;
 }
 
+.giffy-card-long-static {
+  visibility: hidden;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-style: solid;
+    border-width: 2px;
+}
+
 .giffy-card-long-initial {
   margin-left: 12.5%;
   width: 75%;

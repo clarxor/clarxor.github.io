@@ -85,8 +85,7 @@
                     Built with Pixi JS, Tensorflow, and Cordova. 
                     <a href="https://itunes.apple.com/us/app/relay/id1203089200">App Store</a>
                    <a href="https://play.google.com/store/apps/details?id=com.calclavia.relay">Google Play</a>
-
-</div>
+                  </div>
               </div>
             </div>
 
@@ -180,7 +179,7 @@
             </div>
       </div>
 
-      <div class="container-fluid" style = "background:linear-gradient(black, #FAFAFA); padding-top:5px;">
+      <div class="container-fluid" style = "background:linear-gradient(black, white); padding-top:5px;">
         </div>
 
       <div class = "container-fluid" style="background:white;">
@@ -207,7 +206,48 @@
                       </div>
                   </div>
               </div>
+        </div>
+
+        <div class="container-fluid" style = "background:linear-gradient(black, #FAFAFA); padding-top:5px;">
+        </div>
+
+      <div class = "container-fluid" style="background:#FAFAFA;">
+        <div class="container " style=" padding-top:50px;">
+          <div class="row" style="padding-top:50px;">
+              <div class="col-md-5 mb-3">
+                </div>
+            <div class="col-md-2 mb-3" style="background:#FAFAFA; padding-top:80px;">
+                <div class = "blurbText" style=" color:black; font-size:200%;"> EKCO </div>
             </div>
+          </div>
+
+          <div class="row" style=" padding-top:25px;">
+              <div class="col-md-4 mb-3">
+                  <img src="./images/ekco1.png" class="giffy-card-long-static">
+              </div>
+              <div class="col-md-4 mb-3">
+                <img src="./images/ekco2.png" class="giffy-card-long-static">
+              </div>
+              <div class="col-md-4 mb-3">
+                <img src="./images/ekco3.png" class="giffy-card-long-static">
+              </div>
+          </div>
+
+          <div class="row" style="padding-top:50px;">
+              <div class="col-md-3 mb-3"></div>
+            <div class="col-md-6 mb-3" style="background:#FAFAFA; padding-top:10vh;  padding-bottom:20vh;">
+                <div class = "additionalText" style="color:black; font-size:125%"> Connect Ekco with your social platforms and you can start exchanging information in the most efficient way possible.
+                   Ekco uses geo-location and allows you to add nearby users on Facebook, Instagram, Twitter, and more all in a single tap. Built with React Native. <br>
+                  <a href="https://itunes.apple.com/us/app/ekco/id1116907072?mt=8">App Store</a> <br>
+                    <a href="https://play.google.com/store/apps/details?id=io.altum.ekco&hl=en">Google Play</a>
+                </div>
+            </div>
+          </div>
+        </div>
+
+
+
+            
     
               <script>
                   $(window).scroll(function() {
@@ -240,19 +280,30 @@
                     });
                   });
                 </script>
+              <script>
+                  $(window).scroll(function() {
+                    $('.giffy-card-long-static').each(function(){
+                    var imagePos = $(this).offset().top;
+                    var topOfWindow = $(window).scrollTop();
+                      if (imagePos < topOfWindow+800) {
+                        $(this).addClass("fadeIn");
+                      }
+                    });
+                  });
+                </script>
 
-<script>
-    $(window).scroll(function() {
-      $('.additionalText').each(function(){
-      var imagePos = $(this).offset().top;
-  
-      var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+750) {
-          $(this).addClass("slideUp");
-        }
-      });
-    });
-  </script>
+                <script>
+                    $(window).scroll(function() {
+                      $('.additionalText').each(function(){
+                      var imagePos = $(this).offset().top;
+                  
+                      var topOfWindow = $(window).scrollTop();
+                        if (imagePos < topOfWindow+750) {
+                          $(this).addClass("slideUp");
+                        }
+                      });
+                    });
+                  </script>
 
 </body>
 
