@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Portfolio Visual Showcase</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+        :root {
+            --bg: #0f1115;
+            --fg: #e6e6e6;
+            --muted: #9aa0a6;
+            --gap: 24px;
+            --max-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--fg);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        header {
+            max-width: var(--max-width);
+            margin: 40px auto 24px;
+            padding: 0 16px;
+        }
+
+        header h1 {
+            margin: 0 0 8px;
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+
+        header p {
+            margin: 0;
+            color: var(--muted);
+            max-width: 700px;
+        }
+
+        .gallery {
+            max-width: var(--max-width);
+            margin: 0 auto 48px;
+            padding: 0 16px;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--gap);
+        }
+
+        .item {
+            background: #161922;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .item video,
+        .item img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .feature-block {
+            grid-column: 1 / -1;
+            /* take both columns */
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* left video, right stack */
+            gap: 24px;
+            align-items: stretch;
+        }
+
+        /* Make the portrait video span two rows on the left */
+        .feature-block .tall {
+            grid-row: 1 / span 2;
+        }
+
+        .feature-block .tall video {
+            max-height: 720px;
+            /* adjust to taste */
+            object-fit: cover;
+            /* crops edges if height constrained */
+        }
+            .gallery-divider {
+    grid-column: 1 / -1;     /* span both columns */
+    margin: 40px 0 16px;
+    padding-bottom: 6px;
+
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e6e6e6;
+
+    border-bottom: 1px solid #2a2f3a;
+    }
+        .caption {
+            padding: 10px 12px;
+            font-size: 0.85rem;
+            color: var(--muted);
+        }
+
+        /* Mobile: stack to one column */
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Mouse Game Progress – Visual & Animation Showcase</h1>
+        <p>
+            A selection of screenshots, GIFs, and videos to demonstrate project progress and goals for the Capstone.
+        </p>
+    </header>
+
+    <main class="gallery">
+        <!-- Example items -->
+        <!-- <div class="item">
+            <img src="images/combat_stagger.gif" alt="The Game is a Container" />
+            <div class="caption">Enemy stagger / poise break state</div>
+        </div>
+
+        <div class="item">
+            <img src="images/execution_icon.png" alt="Execution icon" />
+            <div class="caption">Execution availability icon (bone white variant)</div>
+        </div> -->
+
+        <div class="item">
+            <img src="images/bossfight.gif" alt="Horde combat" />
+            <div class="caption">Bossfight Gameplay</div>
+        </div>
+        <div class="item">
+            <video src="media/Fight.mp4" muted loop autoplay playsinline controls preload="metadata"></video>
+            <div class="caption">Bossfight Gameplay (MP4)</div>
+        </div>
+        <div class="item">
+            <img src="images/BrutalOptimized.gif" alt="Horde combat" />
+            <div class="caption">Warrior Gameplay</div>
+        </div>
+        <div class="item">
+            <img src="images/archer.gif" alt="Horde combat" />
+            <div class="caption">Ranger Gameplay</div>
+        </div>
+
+        <!-- 
+
+        <div class="item">
+            <img src="images/day_still.png" alt="Environment still" />
+            <div class="caption">Environment readability from top-down camera</div>
+        </div> -->
+
+        <div class="item">
+            <img src="images/night_archer.png" alt="Environment still" />
+            <div class="caption">Nighttime Still</div>
+        </div>
+        <div class="item">
+            <img src="images/windmill.png" alt="Environment still" />
+            <div class="caption">Alternate Still</div>
+        </div>
+
+        <h3 class="gallery-divider">Concept Art </h3>
+        <div class="item">
+            <img src="images/shugokiconcept.png" alt="Environment still" />
+            <div class="caption">Boss Concept Art</div>
+        </div>
+        <div class="item">
+            <img src="images/spearbugconcept.png" alt="Environment still" />
+            <div class="caption">Enemy Concept Art</div>
+        </div>
+        <h3 class="gallery-divider">2022 Prototype created with non-original store bought assets</h3>
+        <!-- special composed block -->
+        <section class="feature-block">
+            <figure class="item tall">
+                <video src="media/old_progress.mp4" muted loop autoplay playsinline controls preload="metadata"></video>
+                <figcaption class="caption">2022 Origins</figcaption>
+            </figure>
+
+            <figure class="item">
+                <img src="images/unknown.png" alt="Execution icon" />
+                <figcaption class="caption">2022 gameplay</figcaption>
+            </figure>
+
+            <figure class="item">
+                <img src="images/old_gameplay.png" alt="Execution icon amber" />
+                <figcaption class="caption">2022 gameplay</figcaption>
+            </figure>
+        </section>
+    </main>
+
+</body>
+
+</html>
