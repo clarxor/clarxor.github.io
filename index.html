@@ -7,6 +7,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <style>
+        /* Collapsible section */
+        .collapsible {
+        grid-column: 1 / -1; /* span both columns */
+        background: #161922;
+        border-radius: 8px;
+        overflow: hidden;
+        }
+
+        .collapsible > summary {
+        list-style: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-weight: 600;
+        color: var(--fg);
+        border-bottom: 1px solid #2a2f3a;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        }
+
+        .collapsible > summary::-webkit-details-marker {
+        display: none; /* hide default triangle in Chrome/Safari */
+        }
+
+        .collapsible > summary::after {
+        content: "▸";
+        color: var(--muted);
+        transition: transform 0.15s ease;
+        }
+
+        .collapsible[open] > summary::after {
+        transform: rotate(90deg);
+        }
+
+        .collapsible .collapsible-body {
+        padding: 16px;
+        }
+
+        .collapsible .helper-text {
+        margin: 0 0 12px;
+        color: var(--muted);
+        font-size: 0.9rem;
+        }
+        
         :root {
             --bg: #0f1115;
             --fg: #e6e6e6;
@@ -178,24 +222,34 @@
             <img src="images/spearbugconcept.png" alt="Environment still" />
             <div class="caption">Enemy Concept Art</div>
         </div>
-        <h3 class="gallery-divider">2022 Prototype created with non-original store bought assets</h3>
-        <!-- special composed block -->
-        <section class="feature-block">
-            <figure class="item tall">
-                <video src="media/old_progress.mp4" muted loop autoplay playsinline controls preload="metadata"></video>
-                <figcaption class="caption">2022 Origins</figcaption>
-            </figure>
-
-            <figure class="item">
-                <img src="images/unknown.png" alt="Execution icon" />
-                <figcaption class="caption">2022 gameplay</figcaption>
-            </figure>
-
-            <figure class="item">
-                <img src="images/old_gameplay.png" alt="Execution icon amber" />
-                <figcaption class="caption">2022 gameplay</figcaption>
-            </figure>
-        </section>
+        <details class="collapsible">
+            <summary>2022 Prototype (store-bought assets) — optional</summary>
+          
+            <div class="collapsible-body">
+              <p class="helper-text">
+                Included to show long-term iteration and growth — not representative of current tone, pacing, or visuals.
+              </p>
+          
+              <!-- your existing block -->
+              <section class="feature-block">
+                <figure class="item tall">
+                  <video src="media/old_progress.mp4" muted loop autoplay playsinline controls preload="metadata"></video>
+                  <figcaption class="caption">2022 Origins</figcaption>
+                </figure>
+          
+                <figure class="item">
+                  <img src="images/unknown.png" alt="2022 gameplay still" />
+                  <figcaption class="caption">2022 gameplay</figcaption>
+                </figure>
+          
+                <figure class="item">
+                  <img src="images/old_gameplay.png" alt="2022 gameplay still" />
+                  <figcaption class="caption">2022 gameplay</figcaption>
+                </figure>
+              </section>
+            </div>
+          </details>
+          
     </main>
 
 </body>
